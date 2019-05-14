@@ -1,1 +1,36 @@
 # Weather233
+
+while n_numb < 43 loop
+    if(mod(n_numb,6)=5) then
+        insert into table1(column1, column2,column3)
+        values(SEQUENCE1.nextval,d_date,24);
+        n_numb := n_numb + 1;
+    end if;
+    if(mod(n_numb,6)=4) then
+        insert into table1(column1, column2,column3)
+        values(SEQUENCE1.nextval,d_date,20);
+        n_numb := n_numb + 1;
+    end if;
+    if(mod(n_numb,6)=3) then
+        insert into table1(column1, column2,column3)
+        values(SEQUENCE1.nextval,d_date,16);
+        n_numb := n_numb + 1;
+    end if;
+    if(mod(n_numb,6)=2) then
+        insert into table1(column1, column2,column3)
+        values(SEQUENCE1.nextval,d_date,12);
+        n_numb := n_numb + 1;
+    end if;
+    if(mod(n_numb,6)=1) then
+        insert into table1(column1, column2,column3)
+        values(SEQUENCE1.nextval,d_date,8);
+        n_numb := n_numb + 1;
+    end if;
+    if(mod(n_numb,6)=0) then
+  --  n_date :=to_date(to_char(d_date)+1);
+        d_date :=d_date+1;
+        insert into table1(column1, column2,column3)
+        values(SEQUENCE1.nextval,d_date,4);
+        n_numb := n_numb + 1;
+    end if;
+    end loop;
